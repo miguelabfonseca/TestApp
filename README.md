@@ -25,10 +25,12 @@ Small app with multiple tests
 
 <h2>Setup</h2>
 <ul>
-<li>https://github.com/miguelabfonseca/TestApp.git</li>
+<li>git clone https://github.com/miguelabfonseca/TestApp.git</li>
 <li>composer install</li>
 <li>create your .env configuration file and database</li>
+<li>php artisan key:generate</li>
 <li>php artisan migrate</li>
 <li>php artisan db:seed --class=TVSeriesSeeder</li>
 <li>php artisan db:seed --class=TVSeriesIntervalsSeeder</li>
-<li>php artisan key:generate</li>
+<li>php artisan storage:link</li>
+</ul>
