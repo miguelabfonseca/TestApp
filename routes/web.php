@@ -21,15 +21,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-
 Route::get('primenumbers', [PrimeNumbersController::class, 'index'])->name('primenumbers');
 
 Route::get('ascii', [AsciiArrayController::class, 'index'])->name('ascii');
