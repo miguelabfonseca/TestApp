@@ -22,3 +22,13 @@ Small app with multiple tests
     Script that tells when the next TV Series will air based on an inputted time-date</p>
 <h3>4. A/B Testing</h3>
 <p>Script that shows redirects end users to the different designs based on the data provided by a library
+
+<h2>Setup</h2>
+<ul>
+<li>https://github.com/miguelabfonseca/TestApp.git</li>
+<li>composer install</li>
+<li>create your .env configuration file and database</li>
+<li>php artisan migrate</li>
+<li>php artisan db:seed --class=TVSeriesSeeder</li>
+<li>php artisan db:seed --class=TVSeriesIntervalsSeeder</li>
+<li>php artisan key:generate</li>
